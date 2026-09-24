@@ -1,16 +1,16 @@
 {
-    "taskDefinitionArn": "arn:aws:ecs:us-east-1:478726716904:task-definition/praneeth:1",
+    "taskDefinitionArn": "arn:aws:ecs:us-east-1:478726716904:task-definition/praneeth:3",
     "containerDefinitions": [
         {
-            "name": "container1",
-            "image": "478726716904.dkr.ecr.us-east-1.amazonaws.com/praneeth@sha256:92a528a8b6093277fd49466ca1833997b2248359b1d7d3ef058b2df5fbcece0f",
+            "name": "Main",
+            "image": "478726716904.dkr.ecr.us-east-1.amazonaws.com/praneeth@sha256:ab75047aa32b61798cd4f63defbfbad598761cecb14cc721b5a212cdb90191d0",
             "cpu": 0,
             "portMappings": [
                 {
                     "containerPort": 80,
                     "hostPort": 80,
                     "protocol": "tcp",
-                    "name": "container1-80-tcp",
+                    "name": "main-80-tcp",
                     "appProtocol": "http"
                 }
             ],
@@ -34,10 +34,10 @@
         }
     ],
     "family": "praneeth",
-    "taskRoleArn": "arn:aws:iam::478726716904:role/ECS-role-39d8fad3",
+    "taskRoleArn": "arn:aws:iam::478726716904:role/ECS-role-e4150282",
     "executionRoleArn": "arn:aws:iam::478726716904:role/ecsTaskExecutionRole",
     "networkMode": "awsvpc",
-    "revision": 1,
+    "revision": 3,
     "volumes": [],
     "status": "ACTIVE",
     "requiresAttributes": [
@@ -75,8 +75,8 @@
     "placementConstraints": [],
     "compatibilities": [
         "EC2",
-        "MANAGED_INSTANCES",
-        "FARGATE"
+        "FARGATE",
+        "MANAGED_INSTANCES"
     ],
     "runtimePlatform": {
         "cpuArchitecture": "X86_64",
@@ -87,7 +87,7 @@
     ],
     "cpu": "1024",
     "memory": "3072",
-    "registeredAt": "2026-09-23T07:14:59.118Z",
+    "registeredAt": "2026-09-24T06:11:12.842Z",
     "registeredBy": "arn:aws:iam::478726716904:root",
     "enableFaultInjection": false,
     "tags": []
